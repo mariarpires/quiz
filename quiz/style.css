@@ -1,0 +1,105 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #D0D0D0;
+  margin: 0;
+  padding: 0;
+
+}
+
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 80px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+h1, h2, p {
+  text-align: center;
+}
+
+.botao {
+  display: inline-block;
+  background: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 10px auto;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  transition: background 0.3s;
+}
+
+.botao:hover {
+  background: #164194;
+}
+
+#opcoes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+button.opcao {
+  padding: 10px;
+  border: none;
+  background: #e0e0e0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button.opcao:hover {
+  background: #d0d0d0;
+}
+
+.opcao.correta {
+  background-color: #4caf50;
+  color: white;
+}
+
+.opcao.errada {
+  background-color: #C1272C;
+  color: white;
+}
+
+#progresso {
+  width: 100%;
+  background-color: #ddd;
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+#barra {
+  height: 100%;
+  width: 0%;
+  background-color: #164194;
+  transition: width 0.5s ease;
+}
+
+.esconder {
+  display: none;
+}
+
+.center {
+  text-align: center;
+}
+.fade {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade.mostrar {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#proxima {
+  margin-top: 20px;
+  display: block;
+}
